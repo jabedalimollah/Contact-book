@@ -7,6 +7,8 @@ import { BsFillCameraFill } from "react-icons/bs";
 import Image from "next/image";
 import Navbar from "./Navbar";
 import ShowDetails from "./ShowDetails";
+import Head from "next/head";
+
 const ContactBook = () => {
   const [photoCondition, setPhotoCondition] = useState(false);
   const [shoWHide, setShowHide] = useState(false);
@@ -133,6 +135,9 @@ const ContactBook = () => {
   useEffect(() => {}, []);
   return (
     <>
+      <Head>
+        <title>Contact-Book</title>
+      </Head>
       <Navbar />
 
       <div className="main">
