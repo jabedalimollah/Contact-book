@@ -6,9 +6,9 @@ import { GrMail } from "react-icons/gr";
 import { BsFillCameraFill } from "react-icons/bs";
 import Image from "next/image";
 import Navbar from "./Navbar";
-import ShowDetails from "./ShowDetails";
+import ShowDetails from "../Components/ShowDetails";
 import Head from "next/head";
-
+// import ShowDetails from '../Components/ShowDetails'
 const ContactBook = () => {
   const [photoCondition, setPhotoCondition] = useState(false);
   const [shoWHide, setShowHide] = useState(false);
