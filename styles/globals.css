@@ -1,27 +1,201 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
+.show-box {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(23, 23, 23);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 110;
+  top: 0;
+  left: 0;
+}
+.second-form {
+  width: 40%;
+}
+.delete {
+  /* width: 50%; */
+  /* background-color: rgb(234, 138, 138); */
+  background: rgb(87, 41, 41);
+  background: linear-gradient(
+    270deg,
+    rgba(87, 41, 41, 1) 0%,
+    rgb(171, 61, 79) 99%
+  );
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+  padding: 4px 13px;
+  border: none;
+  color: rgb(24, 24, 24);
+
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(94, 94, 94, 0.482);
+}
+.delete:hover {
+  transform: scale(1.1);
+}
+.delete:hover {
+  background: rgb(112, 27, 27);
+}
+.CancleBtn {
+  border: none;
+  background-color: transparent;
+  /* color: rgb(255, 255, 255); */
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: 33px;
+}
+.edit {
+  /* width: 50%; */
+  /* background-color: rgb(234, 138, 138); */
+  background: rgb(41, 62, 87);
+  background: linear-gradient(270deg, rgb(41, 44, 87) 0%, rgb(61, 92, 171) 99%);
+
+  padding: 4px 13px;
+  border: none;
+  color: rgb(24, 24, 24);
+
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(94, 94, 94, 0.482);
+}
+.edit:hover {
+  transform: scale(1.1);
+}
+.edit:hover {
+  background: rgb(27, 48, 112);
+}
+.deleteConformBox {
+  background-color: black;
+  /* border: 1px solid white; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.cancelBtn {
+  /* width: 50%; */
+  /* background-color: rgb(234, 138, 138); */
+  background: rgb(41, 62, 87);
+  background: linear-gradient(270deg, rgb(41, 44, 87) 0%, rgb(61, 92, 171) 99%);
+
+  padding: 4px 13px;
+  border: none;
+  color: rgb(24, 24, 24);
+
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(94, 94, 94, 0.482);
+  margin-right: 8px;
+}
+.cancelBtn:hover {
+  transform: scale(1.1);
+}
+.cancelBtn:hover {
+  background: rgb(27, 48, 112);
+}
+.deleteText {
+  color: rgb(117, 115, 115);
+}
+.viewPictureBtn {
+  border: none;
+  background-color: transparent;
+  color: rgb(44, 42, 42);
+  font-weight: bold;
+}
+.viewPictureBtn:hover {
+  color: rgb(194, 193, 193);
+  border-bottom: 2px solid rgb(177, 177, 177);
+}
+.showPicBox {
+  background-color: black;
+  /* border: 1px solid white; */
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.pictureBox {
+  width: 60%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: white; */
+  margin-bottom: 20px;
+}
+.cancelPic {
+  background: rgb(87, 41, 41);
+  background: linear-gradient(
+    270deg,
+    rgba(87, 41, 41, 1) 0%,
+    rgb(171, 61, 79) 99%
+  );
+
+  padding: 4px 13px;
+  border: none;
+  color: rgb(24, 24, 24);
+
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0px 2px 5px rgba(94, 94, 94, 0.482);
+}
+.cancelPic:hover {
+  transform: scale(1.1);
+}
+.cancelPic:hover {
+  background: rgb(112, 27, 27);
+}
+/* @media only screen and (min-width: 768px) { */
+/* tablets and desktop */
+/* .second-form {
+    width: 90%;
+  } */
+/* } */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .second-form {
+    width: 90%;
+  }
+  .form-child-box input {
+    width: 80%;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* ============================ Phones =============== */
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .second-form {
+    width: 90%;
+  }
+  .form-child-box {
+    border-bottom: 2px solid rgb(171, 170, 170);
+    padding: 5px;
+    width: 80%;
+    height: 40px;
+    margin: 9px 0;
+  }
 }
