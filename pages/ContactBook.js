@@ -157,6 +157,9 @@ const ContactBook = () => {
                       backgroundPosition: "center",
                       backgroundSize: "contain",
                       // backgroundSize: "cover",
+                      backgroundRepeat: "no-repeat",
+                      // backgroundAttachment: "fixed",
+                      backgroundPosition: "center",
                     }}
                   ></div>
                   {/* <Image
@@ -292,9 +295,15 @@ const ContactBook = () => {
                                   // backgroundImage: `url(${photoFile})`,
                                   // height: "40px",
                                   // width: "40px",
-                                  backgroundSize: "cover",
-                                  backgroundPosition: "center",
+                                  // backgroundSize: "cover",
+                                  // backgroundPosition: "center",
                                   // backgroundSize: "contain",
+                                  backgroundPosition: "center",
+                                  backgroundSize: "contain",
+                                  // backgroundSize: "cover",
+                                  backgroundRepeat: "no-repeat",
+                                  // backgroundAttachment: "fixed",
+                                  backgroundPosition: "center",
                                 }}
                               ></div>
                             </div>

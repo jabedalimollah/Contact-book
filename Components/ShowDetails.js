@@ -107,9 +107,15 @@ const ShowDetails = ({
               style={{
                 // backgroundImage: `url("/user1.png")`,
                 backgroundImage: `url(${allData.picture})`,
-                backgroundPosition: "center",
+                // backgroundPosition: "center",
                 // backgroundSize: "contain",
-                backgroundSize: "cover",
+                // backgroundSize: "cover",
+                backgroundPosition: "center",
+                backgroundSize: "contain",
+                // backgroundSize: "cover",
+                backgroundRepeat: "no-repeat",
+                // backgroundAttachment: "fixed",
+                backgroundPosition: "center",
               }}
             ></div>
             {/* <Image

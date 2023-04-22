@@ -272,6 +272,7 @@ body {
 }
 .img-cover {
   background-color: rgb(127, 123, 123);
+  /* background-color: black; */
   border-radius: 50%;
   height: 40px;
   width: 40px;
